@@ -1,5 +1,8 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const { processCommand } = require('../controllers/aiContoller.js');
-router.post('/process-command', processCommand);
+
+const { processCommand } = require("../controllers/aiController");
+
+router.post("/process-command", processCommand);
+
 module.exports = router;
